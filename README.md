@@ -1,0 +1,2 @@
+# StatusLampada
+Interruptor de lampada
