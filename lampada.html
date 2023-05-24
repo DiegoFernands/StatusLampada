@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status lampada</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    
+   <header>
+         <h1>STATUS DA LÂMPADA</h1>
+   </header>
+
+   <div>
+     <img id=imagem src="apagada.png" alt="apagada">
+      
+   </div>
+
+   <footer>
+    <button onclick="trocar1()" id= acender> On </button>
+    <button onclick="trocar2()" id= apagar> Off</button>
+
+
+   </footer>
+
+  <script>
+    var imgAtual = "apagada.png";
+    var imgAnterior = "acesa.png";
+
+    function trocar1 (){
+
+    document.getElementById("imagem").src=imgAtual; //luz apagada
+    imgAtual = imgAnterior;
+   }
+
+    
+    var anterior = "apagada.png";
+
+    function trocar2 (){
+    
+    document.getElementById("imagem").src = anterior;
+    
+    }
+
+    
+  </script> 
+</body>
+</html>
