@@ -5,9 +5,9 @@ const luzAcesa = '/img/acesa.png';
 const luzApagada = 'img/apagada.png';
 
 btnOn.addEventListener('click', () => {
-    document.getElementById('luz-apagada').src = luzAcesa;
+    document.getElementById('img').src = luzAcesa;
 });
     
 btnOff.addEventListener('click', () => {
-    document.getElementById('luz-apagada').src = luzApagada;
+    document.getElementById('img').src = luzApagada;
 });
