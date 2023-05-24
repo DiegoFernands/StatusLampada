@@ -1,52 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">  
     <title>Status lampada</title>
-    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
     
-    
-</head>
-<body>
-    
-   <header>
-         <h1>STATUS DA LÂMPADA</h1>
-   </header>
+    <header>
+      <h1>STATUS DA LÂMPADA</h1>
+    </header>
 
-   <div>
-     <img id=imagem src="/img/apagada.png" alt="apagada">
-      
-   </div>
+    <div>
+      <img id="img" src="/img/apagada.png" alt="apagada"> 
+    </div>
 
-   <footer>
-    <button onclick="trocar1()" id= acender> On </button>
-    <button onclick="trocar2()" id= apagar> Off</button>
+    <footer>
+      <button id="on"> On </button>
+      <button id="off"> Off</button>
+    </footer>
 
-
-   </footer>
-
-  <script>
-    var imgAtual = "/img/apagada.png";
-    var imgAnterior = "/img/acesa.png";
-
-    function trocar1 (){
-
-    document.getElementById("imagem").src=imgAtual; //luz apagada
-    imgAtual = imgAnterior;
-   }
-
-    
-    var anterior = "/img/apagada.png";
-
-    function trocar2 (){
-    
-    document.getElementById("imagem").src = anterior;
-    
-    }
-
-    
-  </script> 
-</body>
+    <script src="/js/main.js"></script> 
+  </body>
 </html>
